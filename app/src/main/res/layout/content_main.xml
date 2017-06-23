@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.tarun.customview.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+<com.example.tarun.customview.MyView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:id="@+id/sign_view"
+    android:layout_weight="1"/>
+
+
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.10"
+    android:layout_gravity="bottom">
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Bghjk"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:text="Button2"
+        android:gravity="center"/>
+</TableRow>
+
+</LinearLayout>
