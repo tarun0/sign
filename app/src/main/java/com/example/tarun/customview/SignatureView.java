@@ -4,13 +4,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,13 +15,13 @@ import java.util.ArrayList;
  * Created by Tarun on 23-06-2017.
  */
 
-public class MyView extends View {
+public class SignatureView extends View {
 
     private String LOG_TAG;
     private Paint paint;
     private ArrayList<Float> x;
     private ArrayList<Float> y;
-    public MyView(Context context, @Nullable AttributeSet attrs) {
+    public SignatureView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         LOG_TAG = getClass().getSimpleName();
         paint = new Paint();
@@ -32,7 +29,6 @@ public class MyView extends View {
         paint.setStrokeWidth(15);
         x = new ArrayList<>();
         y = new ArrayList<>();
-
     }
 
     @Override

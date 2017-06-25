@@ -9,7 +9,7 @@
     tools:context="com.example.tarun.customview.MainActivity"
     tools:showIn="@layout/activity_main">
 
-<com.example.tarun.customview.MyView
+<com.example.tarun.customview.SignatureView
     android:layout_width="match_parent"
     android:layout_height="0dp"
     android:id="@+id/sign_view"
